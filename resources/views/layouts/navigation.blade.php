@@ -15,6 +15,18 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('solicitudes.index')" :active="request()->routeIs('solicitudes.index')">
+                        {{ __('Solicitudes') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('employees.index')" :active="request()->routeIs('employees.index')">
+                        {{ __('Empleados') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('vehicles.index')" :active="request()->routeIs('vehicles.index')">
+                        {{ __('Vehiculos') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('teamworks.index')" :active="request()->routeIs('teamworks.index')">
+                        {{ __('Equipos de Trabajo') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -43,7 +55,7 @@
                             @csrf
 
                             <x-dropdown-link :href="route('logout')"
-                                    onclick="event.preventDefault();
+                                onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
@@ -89,7 +101,7 @@
                     @csrf
 
                     <x-responsive-nav-link :href="route('logout')"
-                            onclick="event.preventDefault();
+                        onclick="event.preventDefault();
                                         this.closest('form').submit();">
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>

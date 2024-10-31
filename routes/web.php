@@ -3,6 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\VehicleController;
+use App\Http\Controllers\SolicitudeController;
+use App\Http\Controllers\TeamworkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +35,6 @@ Route::middleware('auth')->group(function () {
 require __DIR__ . '/auth.php';
 
 Route::resource('employees', EmployeeController::class);
+Route::resource('vehicles', VehicleController::class);
+Route::resource('solicitudes', SolicitudeController::class);
+Route::resource('teamworks', TeamworkController::class);
