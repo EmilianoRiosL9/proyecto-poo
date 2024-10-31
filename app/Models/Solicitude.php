@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Solicitude extends Model
 {
-    
+
     protected $perPage = 20;
 
     /**
@@ -30,5 +30,8 @@ class Solicitude extends Model
      */
     protected $fillable = ['dni', 'nombre', 'apellido', 'direccion'];
 
-
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
 }

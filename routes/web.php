@@ -6,6 +6,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\SolicitudeController;
 use App\Http\Controllers\TeamworkController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +39,4 @@ Route::resource('employees', EmployeeController::class);
 Route::resource('vehicles', VehicleController::class);
 Route::resource('solicitudes', SolicitudeController::class);
 Route::resource('teamworks', TeamworkController::class);
+Route::resource('orders', OrderController::class);

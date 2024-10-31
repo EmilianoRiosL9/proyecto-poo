@@ -27,6 +27,9 @@
                     <x-nav-link :href="route('teamworks.index')" :active="request()->routeIs('teamworks.index')">
                         {{ __('Equipos de Trabajo') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('orders.index')" :active="request()->routeIs('orders.index')">
+                        {{ __('Ordenes') }}
+                    </x-nav-link>
                 </div>
             </div>
 
